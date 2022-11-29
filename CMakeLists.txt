@@ -8,6 +8,9 @@ project(
 
 include(CMakeDependentOption)
 
+set(KTX_UNITY_FEATURE_VULKAN ON)
+set(KTX_UNITY_FEATURE_OPENGL ON)
+
 CMAKE_DEPENDENT_OPTION( KTX_UNITY_FEATURE_VULKAN
     "Enable Vulkan texture upload"
     OFF # TODO: Enable by default once feature is stable
